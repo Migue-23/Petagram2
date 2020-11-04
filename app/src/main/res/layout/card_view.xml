@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
     android:padding="6dp"
-    app:cardBackgroundColor="@color/design_default_color_surface"
+    app:cardBackgroundColor="@color/design_default_color_background"
     app:cardCornerRadius="6dp"
     app:cardElevation="4dp">
 
@@ -25,7 +25,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:backgroundTint="@color/purple_200"
+            android:foregroundTint="@color/design_default_color_secondary"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -33,10 +33,9 @@
                 android:id="@+id/btnBone"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:clickable="false"
-                android:cropToPadding="false"
-                android:scaleType="fitEnd"
                 android:backgroundTint="#00FFFFFF"
+                android:clickable="false"
+                android:scaleType="fitEnd"
                 app:srcCompat="@drawable/bone_white" />
 
             <TextView
@@ -64,10 +63,9 @@
                 android:id="@+id/btnBoneYellow"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:clickable="false"
+                android:backgroundTint="#00FFFFFF"
                 android:cropToPadding="false"
                 android:scaleType="fitEnd"
-                android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/bone_yellow" />
         </LinearLayout>
     </LinearLayout>
