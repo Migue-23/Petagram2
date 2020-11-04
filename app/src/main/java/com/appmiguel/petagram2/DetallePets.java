@@ -37,8 +37,6 @@ public class DetallePets extends AppCompatActivity {
         adapter.addPets(new Pet(R.drawable.dog_01, "Lola", "3"));
         adapter.addPets(new Pet(R.drawable.dog_02, "Paco", "4"));
         adapter.addPets(new Pet(R.drawable.dog_03, "Lucky", "5"));
-        adapter.addPets(new Pet(R.drawable.dog_04, "Piti", "3"));
-        adapter.addPets(new Pet(R.drawable.dog_05, "Peludo", "4"));
         adapter.addPets(new Pet(R.drawable.dog_06, "Laika", "5"));
         adapter.addPets(new Pet(R.drawable.dog_07, "Rocky", "3"));
     }

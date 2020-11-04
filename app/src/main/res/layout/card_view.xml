@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/cv_cards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
     android:padding="6dp"
+    app:cardBackgroundColor="@color/design_default_color_surface"
     app:cardCornerRadius="6dp"
-    app:cardElevation="4dp"
-    >
+    app:cardElevation="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="4sp"
-        android:background="#F5F5F5">
+        android:padding="8sp">
 
         <ImageView
             android:id="@+id/imgPet"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:layout_margin="4dp"
-            />
+            android:layout_margin="4dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="@color/purple_200"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -35,6 +35,8 @@
                 android:layout_height="48dp"
                 android:clickable="false"
                 android:cropToPadding="false"
+                android:scaleType="fitEnd"
+                android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/bone_white" />
 
             <TextView
@@ -44,6 +46,7 @@
                 android:padding="4sp"
                 android:text="Lola"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
 
             <TextView
@@ -63,9 +66,10 @@
                 android:layout_height="48dp"
                 android:clickable="false"
                 android:cropToPadding="false"
-                android:scaleType="centerCrop"
+                android:scaleType="fitEnd"
+                android:backgroundTint="#00FFFFFF"
                 app:srcCompat="@drawable/bone_yellow" />
         </LinearLayout>
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
